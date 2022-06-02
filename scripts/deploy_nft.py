@@ -7,12 +7,10 @@ def deploy_iconic_nft():
     contract = MyIconicNFT.deploy({"from": account})
     print("Minting new nft 1")
     tx = contract.makeAnIconicNFT({"from": account})
-   
-    print(contract.viewbase64())
-
-    # print("minting nft 2")
-    contract.makeAnIconicNFT({"from": account})
-    print(contract.viewbase64())
+    print(tx.events)
+    print("minting nft 2")
+    tx = contract.makeAnIconicNFT({"from": account})
+    print(tx.events)
 
 
 def main():
