@@ -11,7 +11,7 @@ const TOTAL_MINT_COUNT = 50;
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
-  const CONTRACT_ADDRESS = "0xf6A8284Ef542c2F83D6f84bc88Af34Ab182e781D";
+  const CONTRACT_ADDRESS = "0x705f8B395361218056B20eE5C36853AB84b8bbFF";
   const checkIfWalletIsConnected = async () => {
     const { ethereum } = window;
 

@@ -12,6 +12,9 @@ def deploy_iconic_nft():
     tx = contract.makeAnIconicNFT({"from": account})
     print(tx.events)
 
+    print("minting NFT number 3")
+    tx = contract.makeAnIconicNFT({"from": account})
+
 
 def main():
     deploy_iconic_nft()
