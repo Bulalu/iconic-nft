@@ -51,7 +51,7 @@ const App = () => {
       const { ethereum } = window;
 
       if (!ethereum) {
-        alert("Yep it wont work now go Get MetaMask!, giggity");
+        alert("Yep it wont work, now go Get MetaMask 🧐, giggity");
         return;
       }
 
