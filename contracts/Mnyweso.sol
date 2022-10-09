@@ -61,4 +61,3 @@ contract Mnyweso is  Pausable, Ownable, ERC721URIStorage {
     }
 }
 
-

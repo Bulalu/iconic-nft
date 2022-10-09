@@ -25,7 +25,7 @@ contract MyIconicNFT is ERC721URIStorage {
     string[] secondWords = ["Giggity", "WTF", "Laid", "High", "Mofos", "Dev", "BigBunda", "Champ", "GM", "ShitCoin", "Bullish", "Bearish", "ShitCoin", "Ponzi", "Degens", "LFG", "GTFOLH"];
     string[] thirdWords = ["Havana", "Zanzibar", "Madrid", "NewYork", "Paris", "Bali", "Ibiza", "CapeTown", "Nairobi", "DaresSalaam", "London", "Toronto", "Manchester", "Cairo", "Berlin"];
     
-    event JASONI(string json, string tokenURI);
+    
     function makeAnIconicNFT() public {
 
         require(_tokenIds.current() <= MAX_SUPPLY, "Can't mint more than 100");
@@ -58,7 +58,7 @@ contract MyIconicNFT is ERC721URIStorage {
         
 
         string memory finalTokenUri = string.concat("data:application/json;base64,", json);
-        emit JASONI(json, finalTokenUri);
+      
         _safeMint(msg.sender, newItemId);
 
         // set nft data
@@ -103,4 +103,3 @@ contract MyIconicNFT is ERC721URIStorage {
   }
 }
 
-// Your JSON is hosted at: https://jsonkeeper.com/b/218N
